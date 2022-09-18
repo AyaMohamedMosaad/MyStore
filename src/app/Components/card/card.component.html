@@ -1,0 +1,33 @@
+
+<div class="con">
+
+  <div class="card">
+    <div class="heart">
+     <a routerLink="/details/{{data.id}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
+      </div>
+      <div class="top-div">
+          <div class="border">
+          <img src="{{data.image}}" routerLink="/details/{{data.id}}">
+          </div>
+          <span>{{data.price}} L.E</span>
+      </div>
+      <div class="bottom-div">
+          <h5>{{data.name}}</h5>
+
+      </div>
+      <div class="last-section">
+
+          <div class="buttons">
+              <button (click)="addButton=false"  *ngIf="addButton">Add to cart</button>
+          </div>
+
+          <div *ngIf="!addButton"  style="display:flex">
+              <input type="number" class="form-control"  [(ngModel)]="amount">
+              <button (click)="add();addButton=true" style="border-radius:2px;"><img src="/assets/images/icons8-shopping-cart.gif" style="width: 20px;"></button>
+       </div>
+
+      </div>
+  </div>
+</div>
+
+

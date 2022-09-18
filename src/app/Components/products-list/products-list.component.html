@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+  <section>
+    <div class="rt-container">
+    	<div class="col-rt-12">
+  <!-- Slider -->
+          <div id="slider">
+            <div class="slides">
+              <div class="slider">
+                <div class="image"> <img src="/assets/images/background.png"> </div>
+              </div>
+              <div class="slider">
+                <div class="image"> <img src="/assets/images/all.jpg"> </div>
+              </div>
+              <div class="slider">
+                <div class="image"> <img src="/assets/images/lamp.jpg"> </div>
+              </div>
+              <div class="slider">
+                <div class="image"> <img src="/assets/images/all.jpg"> </div>
+              </div>
+            </div>
+            <div class="switch">
+              <ul>
+                <li>
+                  <div class="on"></div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+	 </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <select class="form-control w-25  m-4 align-content-center" name="cat" id="prdCat" #selected
+  (change)="getCategoryById(selected.value)">
+  <option value="0" selected>All</option>
+  <option *ngFor="let cat of AllCategories" [value]="cat.id">
+    {{ cat.Name }}
+  </option>
+</select>
+
+  <div class="container">
+
+    <div class="px-4 px-lg-5 mt-5">
+
+    <div class="row"  *ngIf="!Loading">
+
+    <div class="col-4 justify-content-center" *ngFor="let product of AllProducts">
+
+    <app-card [data]="product" (item)="addToCard($event)"></app-card>
+
+    </div>
+
+    </div>
+  </div>
+
+
+  <div class="text-center w-500" *ngIf="Loading">
+    <app-spinner></app-spinner>
+  </div>
+</div>
+
+

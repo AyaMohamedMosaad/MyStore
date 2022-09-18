@@ -1,0 +1,119 @@
+
+  <div class="container">
+
+    <div class="cardlength"><h4>You have {{CardProducts.length}} items in Your Card</h4></div>
+      <button class="btn btn-danger mb-3" (click)="clearShoppingCart()">Clear Shopping Cart <i class="fa fa-trash-o" aria-hidden="true" ></i></button>
+
+      <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
+        <th scope="col">Amount</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pro of CardProducts;let index=index">
+        <td><img [src]="pro.item.image"></td>
+        <td>{{pro.item.name}}</td>
+        <td>{{pro.item.price}} L.E</td>
+        <td>{{pro.item.price * pro.quantity}} L.E</td>
+
+        <td>
+          <div class="" style="display: flex; justify-content: center;">
+            <button class="btn btn-success inc" (click)="inc(index)">+</button>
+            <input class="form-control w-25" type="number" [(ngModel)]="pro.quantity" minlength="1" (change)="DetectChange()">
+            <button class="btn btn-danger dec" (click)="dec(index)">-</button>
+          </div>
+        </td>
+        <td><button class="btn btn-danger" (click)="deleteProduct(index)">Detete <i class="fa fa-trash-o" aria-hidden="true" ></i></button></td>
+      </tr>
+
+    </tbody>
+  </table>
+  <div class="TotalCardPrice">
+   <h4> Total Card Price : {{CardTotalPrice}}  L.E</h4>
+
+  </div>
+
+  <button class="btn btn-success"  style="margin-left:1000px ;" routerLink="/Products"><i class='far fa-arrow-alt-circle-left' style='font-size:24px'></i>Go To List</button>
+
+
+
+
+<!-- Form -->
+<form [formGroup]="registerForm" (ngSubmit)="registerSubmited()" class="border p-3 shadow  mb-5 bg-white rounded">
+
+  <div class="row g-0">
+    <div class="col text-center p-2 mb-3 " style="background-color:  rgba(238,224,208);;">
+      <span class="fs-3">Fill This Data</span>
+  </div>
+
+  <div class="row">
+
+    <div class="col-12">
+      <label for="fullname" class="form-lable">Full Name</label>
+      <input  formControlName="fullname" type="text" class="form-control" id="firstname" />
+      <div class="form-text text-danger" *ngIf="FullName.errors?.['required'] && (FullName.touched || FullName.dirty) ">
+         FullName is Required
+      </div>
+      <div class="form-text text-danger" *ngIf="FullName.errors?.['minlength']&& (FullName.touched || FullName.dirty)">
+        FullName Is Too Short
+      </div>
+      <div class="form-text text-danger" *ngIf="FullName.errors?.['pattern'] && (FullName.touched || FullName.dirty)">
+         FullName shoud not Contain Numbers
+      </div>
+    </div>
+
+
+    <div class="col-12">
+      <label for="address" class="form-lable">Address</label>
+      <input formControlName="address" type="text" class="form-control" id="Address" />
+      <div class="form-text text-danger" *ngIf="Address.errors?.['required'] && (Address.touched || Address.dirty) ">
+        Address is Required
+      </div>
+      <div class="form-text text-danger" *ngIf="Address.errors?.['minlength']&& (Address.touched || Address.dirty)">
+        Address Is Too Short
+      </div>
+    </div>
+
+
+
+    <div class="col-12">
+      <label for="creditcardnumber" class="form-lable">Credit Card Number</label>
+      <input formControlName="creditcardnumber" type="text" class="form-control" id="CreditCardNumber" />
+      <div class="form-text text-danger" *ngIf="CreditCardNumber.errors?.['required'] && (CreditCardNumber.touched || CreditCardNumber.dirty) ">
+        Credit Card Number is Required
+      </div>
+      <div class="form-text text-danger" *ngIf="CreditCardNumber.errors?.['pattern'] && (CreditCardNumber.touched || CreditCardNumber.dirty)">
+        Credit Card Number must 16 digit numbers
+     </div>
+
+    </div>
+
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-3">
+     <div class="d-grid">
+        <button *ngIf="CardProducts.length>0" routerLink="/Confirmation"  type="submit" class="btn btn-success m-2" [disabled]="registerForm.invalid"   (click)="SendCardToBackEng()">Order Now</button>
+     </div>
+    </div>
+</div>
+
+</form>
+
+<div class="alert alert-danger" *ngIf="notSuccess">
+  <strong>Danger!</strong> Your Card Is Empty
+</div>
+
+</div>
+
+
+
+
+
+
