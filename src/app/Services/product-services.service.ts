@@ -10,9 +10,7 @@ export class ProductServicesService {
 
    ProductsUrl="http://localhost:3000/Products"
    CategoriesUrl="http://localhost:3000/Categiries"
-
    CategorytsUrl="http://localhost:3000/Products?Categoryid"
-
 
   GetAllProducts()
   {

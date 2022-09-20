@@ -21,8 +21,8 @@ export class AddToCardComponent implements OnInit {
 
 }
 registerForm=new FormGroup({
-  fullname:new FormControl("",[Validators.required,Validators.minLength(3),Validators.pattern("[A-Za-z]{3,}")]),
-  address:new FormControl("",[Validators.required,Validators.minLength(6),Validators.pattern("[A-Za-z]{6,}")]),
+  fullname:new FormControl("",[Validators.required,Validators.minLength(3),Validators.pattern("^[a-zA-Z ]{3,}$")]),
+  address:new FormControl("",[Validators.required,Validators.minLength(6),Validators.pattern("^[a-zA-Z ]{6,}$")]),
   creditcardnumber:new FormControl("",[Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{16}$")]),
 
 });
