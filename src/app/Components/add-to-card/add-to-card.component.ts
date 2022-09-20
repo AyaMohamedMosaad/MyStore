@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { empty } from 'rxjs';
+import { AddToCardServicesService } from 'src/app/Services/AddToCardServices/add-to-card-services.service';
 
-import { ProductServicesService } from 'src/app/Services/product-services.service';
+import { ProductServicesService } from 'src/app/Services/ProductServices/product-services.service';
 
 @Component({
   selector: 'app-add-to-card',
@@ -11,7 +12,7 @@ import { ProductServicesService } from 'src/app/Services/product-services.servic
 })
 export class AddToCardComponent implements OnInit {
 
-  constructor(private ProductServices:ProductServicesService) { }
+  constructor(private ProductServices:ProductServicesService ,private CardServices:AddToCardServicesService) { }
   AllItems:any
   count:any
 
@@ -125,15 +126,20 @@ clearShoppingCart()
 }
 
 
-notSuccess:boolean=false
-success:boolean=true
-SendCardToBackEng()
-{
-  if(this.CardProducts.length =0)
-  {
-    this.notSuccess=true
 
-  }
+SendCardToBackEnd()
+{
+  let products=this.CardProducts.map((item: { item: { id: any; }; quantity: any; })=>{
+   return {productId:item.item.id ,productQuantity:item.quantity}
+  })
+
+  let Model=
+    {
+    UserId:"1234",
+    Date:new Date(),
+    Products:products
+    }
+this.CardServices.CreateNewCart(Model)
 
 }
 

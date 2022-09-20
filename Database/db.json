@@ -1,78 +1,349 @@
 {
-
-
-  "Categiries":[
-   {
-  "id":1,
-  "Name":"Chair"
-   },
-  {"id":2,
-  "Name":"Side Tables"
-  },
-
-  {"id":3,
-  "Name":"Lighting"
-  },
-
-  {"id":4,
-  "Name":"Mirrors"
-  }
-  ]
-  ,
-
-
+  "Categiries": [
+    {
+      "id": 1,
+      "Name": "Chair"
+    },
+    {
+      "id": 2,
+      "Name": "Side Tables"
+    },
+    {
+      "id": 3,
+      "Name": "Lighting"
+    },
+    {
+      "id": 4,
+      "Name": "Mirrors"
+    }
+  ],
   "Products": [
+    {
+      "id": 1,
+      "Categoryid": 1,
+      "name": "Clayton Fur Chair",
+      "Description": "A functional and decorative fur chair for a living area, bedroom. This fur chair would make an excellent accent piece with any modern or vintage decor.",
+      "price": "500",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/651/lacasa-39VSUV6YaE5wQo1O-Code-A_Z-4.jpg"
+    },
+    {
+      "id": 2,
+      "Categoryid": 1,
+      "name": "Jenny Chair",
+      "Description": "A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "4140",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/5753/6kUA9z-blob"
+    },
+    {
+      "id": 3,
+      "Categoryid": 1,
+      "name": "Nieves Chair",
+      "Description": "A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "5637",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/5754/37E1bb-blob"
+    },
+    {
+      "id": 4,
+      "Categoryid": 1,
+      "name": "Casa Chair",
+      "Description": "This exceptionally comfortable chair is set to become an excellent addition to your living room, matching any contemporary or traditional decor. The high-quality fabric is extra sturdy, retaining its look even after prolonged usage.",
+      "price": "2.999",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/product_images/4829/lacasa-KWCaTRk6-1a12f425-7dc8-4834-bb0b-026f1a0a2a9b.jpg"
+    },
+    {
+      "id": 5,
+      "Categoryid": 1,
+      "name": "PED Chair",
+      "Description": "modern comfortable chair for any living room. A functional and decorative PED chair for a living area. It would make an excellent accent piece in the room in any modern or vintage decor.",
+      "price": "4692",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2101/lacasa-3jkIRm2Iz2l8ZSHr-17_6_1_1.jpg"
+    },
+    {
+      "id": 6,
+      "Categoryid": 1,
+      "name": "Scandinavian End Table",
+      "Description": "A functional and decorative end table for a living area. This table would make an excellent accent piece in the corner of the room in any modern or vintage decor.",
+      "price": "3840",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1/lacasa-UDWioqVHSrzalXs3-03BC6B9C-3C7B-4A11-9AB5-1248140012E6.jpeg"
+    },
+    {
+      "id": 7,
+      "Categoryid": 1,
+      "name": "GRAY Chair",
+      "Description": "A modern comfortable chair that will highlight any living room. A functional and decorative GRY chair for a living area. It would make an excellent accent piece in the room in any modern or vintage decor.",
+      "price": "4200",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2070/lacasa-wgHKuDUM7GGBST56-Pitchy.C010.jpeg"
+    },
+    {
+      "id": 8,
+      "Categoryid": 1,
+      "name": "Joyce Chair With Banqu",
+      "Description": "A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor",
+      "price": "5999",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/6225/h3GSRP-blob"
+    },
+    {
+      "id": 9,
+      "Categoryid": 1,
+      "name": "Castiglione Chair",
+      "Description": "A functional and decorative sectional chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor.",
+      "price": "4320",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/5828/xsQyWU-blob"
+    },
+    {
+      "id": 10,
+      "Categoryid": 1,
+      "name": "Lierop Chair",
+      "Description": "A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor",
+      "price": "3599",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/6222/zOgyqD-blob"
+    },
+    {
+      "id": 11,
+      "Categoryid": 2,
+      "name": "Circular Modern End Table",
+      "Description": "A functional and decorative End tables for a living area, bedroom, or home study. This End tables would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor",
+      "price": "1198",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/5088/lacasa-lT97sZPi-PHOTO-2020-11-30-20-05-50.jpg"
+    },
+    {
+      "id": 12,
+      "Categoryid": 2,
+      "name": "Modern Round End Table",
+      "Description": "A functional and decorative End tables for a living area, bedroom, or home study. This End tables would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1560",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/5087/lacasa-mvvo1rIB-PHOTO-2020-11-30-22-26-15.jpg"
+    },
+    {
+      "id": 13,
+      "Categoryid": 2,
+      "name": "MKY Side Table",
+      "Description": "An Essential Side Table That Will Highlight any Living Room A functional and decorative side table for a living area, bedroom, or home study. This side table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1950",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/4925/lacasa-fDKj5HQ8-E02-black.jpg"
+    },
+    {
+      "id": 14,
+      "Categoryid": 2,
+      "name": "Small B Round Table",
+      "Description": "A functional and decorative side table for a living area, bedroom, or home study. This side table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1320",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3935/lacasa-dTimgeLbXR8wv5sz-Pitchy.3.jpg"
+    },
+    {
+      "id": 15,
+      "Categoryid": 2,
+      "name": "Inrum 3-Piece End Table",
+      "Description": "A functional and decorative end table for a living area. This end table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1920",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3923/lacasa-vQjMqPQfpfhIVpnU-Pitchy.16.jpg"
+    },
+    {
+      "id": 16,
+      "Categoryid": 2,
+      "name": "Modern End Table",
+      "Description": "A functional and decorative EndTable for a living area, bedroom, or home study. This EndTable would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor",
+      "price": "1199",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3890/lacasa-hKQwq8iDpGuFvsJ3-Pitchy.61-copy.jpg"
+    },
+    {
+      "id": 17,
+      "Categoryid": 2,
+      "name": "Modern End-Table",
+      "Description": "A functional and decorative End table for a living area, bedroom, or home study. This End table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1560",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3888/lacasa-RHWTmYmmypK3dLnY-Pitchy.63.jpg"
+    },
+    {
+      "id": 18,
+      "Categoryid": 2,
+      "name": "Round Modern End Table",
+      "Description": "A functional and decorative End table for a living area, bedroom, or home study. This End table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.",
+      "price": "1440",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3875/lacasa-R0GPfThj8g1o3VUa-Pitchy.79.jpg"
+    },
+    {
+      "id": 19,
+      "Categoryid": 2,
+      "name": "Glass Sled End Table",
+      "Description": "This is our simple and modern coffee table, which will be a great addition to your living room.Crafted from high quality steel with Electro static Painting & marble , this coffee table is sturdy and durable for long-term use.",
+      "price": "1439",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2569/lacasa-z7xTf1yHDuKQyx9N-WhatsApp-Image-2021-05-12-at-3.59.45-PM-2.jpeg"
+    },
+    {
+      "id": 20,
+      "Categoryid": 2,
+      "name": "Glass Frame Nesting Table",
+      "Description": "This is our simple and modern coffee table, which will be a great addition to your living room.Crafted from high quality steel with Electro static Painting & marble , this coffee table is sturdy and durable for long-term use.",
+      "price": "1799",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2568/lacasa-Qw4YMf2zFBepaQWH-WhatsApp-Image-2021-05-12-at-3.59.45-PM-3.jpeg"
+    },
+    {
+      "id": 21,
+      "Categoryid": 3,
+      "name": "Crux Lighting Unit",
+      "Description": "A functional and decorative Crux Lighting Unit for a living area, bedroom, or home study. This Crux Lighting Unit would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor",
+      "price": "166",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3535/lacasa-kuzpMsI0I9GPFVGA-941_Loft-lampada-a-sospensione-atyle-creativo-corda-di-canapa-art-deco-di-illuminazione-bar-vintage-luce-ristorante-country-americano-lampadina-appesa-EG.jpg"
+    },
+    {
+      "id": 22,
+      "Categoryid": 3,
+      "name": "Athanasiadis Ceiling",
+      "Description": "This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "659",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1659/lacasa-SP7VvEtUa1LMaSJ1-13fkpj_zarwrbmmxiczxwm6.jpg"
+    },
+    {
+      "id": 23,
+      "Categoryid": 3,
+      "name": "Elnora Ceiling Lighting",
+      "Description": "This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "2963",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1605/lacasa-qbNU6ndBvwfHmMUV-yl0064uk3kh_91vrufpnjiycgo6n-2.jpg"
+    },
+    {
+      "id": 124,
+      "Categoryid": 3,
+      "name": "Josefina Ceiling Lighting",
+      "Description": "This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "719",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1603/lacasa-DVimuynlykKYrZuo-yl006627vb2bq_dxouiqvjzgpsfdxe-2.jpg"
+    },
+    {
+      "id": 25,
+      "Categoryid": 3,
+      "name": "Dixie Ceiling Lighting",
+      "Description": "This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "2640",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1602/lacasa-IvZUOF0JJw1XCzWu-yl006727p1cx5_iq1v6qlytufjc6w3_copy_.jpg"
+    },
+    {
+      "id": 26,
+      "Categoryid": 3,
+      "name": "Yvonne Ceiling Lighting",
+      "Description": "This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "1559",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1610/lacasa-6NwbdrzimFni1Tnr-yl0058kloxh_qor13prekruqbc9b.jpg"
+    },
+    {
+      "id": 27,
+      "Categoryid": 3,
+      "name": "Josefina Ceiling Lighting-Gold",
+      "Description": "This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "2159",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1609/lacasa-DRWfvN0kgNhEfi82-yl006227jrctc_kz9cw481xrjdrpef.jpg"
+    },
+    {
+      "id": 28,
+      "Categoryid": 3,
+      "name": "Kelli Ceiling Lighting-Black",
+      "Description": "This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "2159",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1606/lacasa-t50Swr73wXOiPN5g-yl0063tuzse_53xmish2ikgbrj6a_copy_.jpg"
+    },
+    {
+      "id": 29,
+      "Categoryid": 3,
+      "name": "Cassie Ceiling Lighting",
+      "Description": "This triple pendant light modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.",
+      "price": "9960",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/1599/lacasa-6uZDXkgCrVhDnaYt-yl0068b1bmy_owqd1xhxp9rxlb4b.jpg"
+    },
+    {
+      "id": 30,
+      "Categoryid": 3,
+      "name": "Black Table Lamp ",
+      "Description": "Plastic table lamp with chapeau. All Black &nbsp;",
+      "price": "1000",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/4560/lacasa-bcv7bAsQgBjdCEMe-IMG_0107-scaled.jpg"
+    },
+    {
+      "id": 31,
+      "Categoryid": 4,
+      "name": "Paulo Mirror",
+      "Description": "An elegant mirror that will highlight any wall. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "1500",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/4898/lacasa-LModvjrL-ASH1102.jpeg"
+    },
+    {
+      "id": 32,
+      "Categoryid": 4,
+      "name": "Getto Mirror",
+      "Description": "An elegant mirror that will highlight any wall. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "1999",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/4897/lacasa-9l9XsPtE-ASH1106.jpeg"
+    },
+    {
+      "id": 33,
+      "Categoryid": 4,
+      "name": "Hand-Crafted Wooden",
+      "Description": "A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "1224",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/4411/lacasa-QQL1RcTjfmQYsxJ9-d4f538c9-5ec6-471a-b916-cec584cb9868.jpg"
+    },
+    {
+      "id": 34,
+      "Categoryid": 4,
+      "name": "LED Mirror Illuminated",
+      "Description": "A functional and decorative mirror for a bedroom. This mirror would make an excellent accent piece in the corner of the room in any modern or vintage decor.",
+      "price": "2170",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/3633/lacasa-Q3LDhJGXfByxtEnC-tfhg.jpg"
+    },
+    {
+      "id": 35,
+      "Categoryid": 4,
+      "name": "Macrame Large Mirror",
+      "Description": "A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "1176",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2884/lacasa-SRgAuPaZg0ERH312-art3.jpg"
+    },
+    {
+      "id": 36,
+      "Categoryid": 4,
+      "name": "PEC Three Mirror",
+      "Description": "An essential mirror for any modern living room A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "2520",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2090/lacasa-d5XLMyJrbKbCBPa2-IMEI0006.jpg"
+    },
+    {
+      "id": 37,
+      "Categoryid": 4,
+      "name": "ELG Mirror",
+      "Description": "a mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "1319",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2087/lacasa-1C2UzjhicqIqpx01-006_4.jpg"
+    },
+    {
+      "id": 38,
+      "Categoryid": 4,
+      "name": "SAL Mirror",
+      "Description": "A mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor",
+      "price": "1350",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2086/lacasa-UOn4xvgjwvPLOoNz-007_3.jpg"
+    },
+    {
+      "id": 39,
+      "Categoryid": 4,
+      "name": "AYR Mirror & Console",
+      "Description": "A mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.",
+      "price": "4080",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/2085/lacasa-anXGTlVArQN4xrZu-017_1.jpg"
+    },
+    {
+      "id": 40,
+      "Categoryid": 4,
+      "name": "Tura Mirror Gold",
+      "Description": "Made of Steel A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor",
+      "price": "1260",
+      "image": "https://lacasa.fra1.digitaloceanspaces.com/public/products/821/lacasa-xiueVlBDve0ajyOF-gfffj.jpeg"
+    }
 
-     {"id":1,"Categoryid":1,"name":"Clayton Fur Chair","Description":"A functional and decorative fur chair for a living area, bedroom. This fur chair would make an excellent accent piece with any modern or vintage decor.","price":"500","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/651/lacasa-39VSUV6YaE5wQo1O-Code-A_Z-4.jpg"}
-    ,{"id":2,"Categoryid":1,"name":"Jenny Chair","Description":"A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"4140","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/5753/6kUA9z-blob"}
-    ,{"id":3 ,"Categoryid":1,"name":"Nieves Chair","Description":"A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"5637" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/5754/37E1bb-blob"}
-    ,{"id":4,"Categoryid":1 ,"name":"Casa Chair","Description":"This exceptionally comfortable chair is set to become an excellent addition to your living room, matching any contemporary or traditional decor. The high-quality fabric is extra sturdy, retaining its look even after prolonged usage.","price":"2.999" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/product_images/4829/lacasa-KWCaTRk6-1a12f425-7dc8-4834-bb0b-026f1a0a2a9b.jpg"}
-    ,{"id":5 ,"Categoryid":1 ,"name":"PED Chair","Description":"modern comfortable chair for any living room. A functional and decorative PED chair for a living area. It would make an excellent accent piece in the room in any modern or vintage decor.","price":"4692" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2101/lacasa-3jkIRm2Iz2l8ZSHr-17_6_1_1.jpg"}
-    ,{"id":6,"Categoryid":1 ,"name":"Scandinavian End Table","Description":"A functional and decorative end table for a living area. This table would make an excellent accent piece in the corner of the room in any modern or vintage decor.","price":"3840" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1/lacasa-UDWioqVHSrzalXs3-03BC6B9C-3C7B-4A11-9AB5-1248140012E6.jpeg"}
-   ,{"id":7,"Categoryid":1 ,"name":"GRAY Chair","Description":"A modern comfortable chair that will highlight any living room. A functional and decorative GRY chair for a living area. It would make an excellent accent piece in the room in any modern or vintage decor.","price":"4200" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2070/lacasa-wgHKuDUM7GGBST56-Pitchy.C010.jpeg"}
-   ,{"id":8,"Categoryid":1 ,"name":"Joyce Chair With Banqu","Description":"A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor","price":"5999" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/6225/h3GSRP-blob"}
-   ,{"id":9,"Categoryid":1 ,"name":"Castiglione Chair","Description":"A functional and decorative sectional chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor.","price":"4320" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/5828/xsQyWU-blob"}
-   ,{"id":10,"Categoryid":1 ,"name":"Lierop Chair","Description":"A functional and decorative chair for a living area. This chair would make an excellent accent piece in the corner of the room in any modern or vintage decor","price":"3599" ,"image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/6222/zOgyqD-blob"}
+  ],
 
 
 
-,{"id":11,"Categoryid":2,"name":"Circular Modern End Table","Description":"A functional and decorative End tables for a living area, bedroom, or home study. This End tables would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor","price":"1198","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/5088/lacasa-lT97sZPi-PHOTO-2020-11-30-20-05-50.jpg"}
-,{"id":12,"Categoryid":2,"name":"Modern Round End Table","Description":"A functional and decorative End tables for a living area, bedroom, or home study. This End tables would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1560","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/5087/lacasa-mvvo1rIB-PHOTO-2020-11-30-22-26-15.jpg"}
-,{"id":13,"Categoryid":2,"name":"MKY Side Table","Description":"An Essential Side Table That Will Highlight any Living Room A functional and decorative side table for a living area, bedroom, or home study. This side table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1950","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/4925/lacasa-fDKj5HQ8-E02-black.jpg"}
-,{"id":14,"Categoryid":2,"name":"Small B Round Table","Description":"A functional and decorative side table for a living area, bedroom, or home study. This side table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1320","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3935/lacasa-dTimgeLbXR8wv5sz-Pitchy.3.jpg"}
-,{"id":15,"Categoryid":2,"name":"Inrum 3-Piece End Table","Description":"A functional and decorative end table for a living area. This end table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1920","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3923/lacasa-vQjMqPQfpfhIVpnU-Pitchy.16.jpg"}
-,{"id":16,"Categoryid":2,"name":"Modern End Table","Description":"A functional and decorative EndTable for a living area, bedroom, or home study. This EndTable would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor","price":"1199","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3890/lacasa-hKQwq8iDpGuFvsJ3-Pitchy.61-copy.jpg"}
-,{"id":17,"Categoryid":2,"name":"Modern End-Table","Description":"A functional and decorative End table for a living area, bedroom, or home study. This End table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1560","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3888/lacasa-RHWTmYmmypK3dLnY-Pitchy.63.jpg"}
-,{"id":18,"Categoryid":2,"name":"Round Modern End Table","Description":"A functional and decorative End table for a living area, bedroom, or home study. This End table would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor.","price":"1440","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3875/lacasa-R0GPfThj8g1o3VUa-Pitchy.79.jpg"}
-,{"id":19,"Categoryid":2,"name":"Glass Sled End Table","Description":"This is our simple and modern coffee table, which will be a great addition to your living room.Crafted from high quality steel with Electro static Painting & marble , this coffee table is sturdy and durable for long-term use.","price":"1439","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2569/lacasa-z7xTf1yHDuKQyx9N-WhatsApp-Image-2021-05-12-at-3.59.45-PM-2.jpeg"}
-,{"id":20,"Categoryid":2,"name":"Glass Frame Nesting Table","Description":"This is our simple and modern coffee table, which will be a great addition to your living room.Crafted from high quality steel with Electro static Painting & marble , this coffee table is sturdy and durable for long-term use.","price":"1799","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2568/lacasa-Qw4YMf2zFBepaQWH-WhatsApp-Image-2021-05-12-at-3.59.45-PM-3.jpeg"}
-
-
-
-,{"id":21,"Categoryid":3,"name":"Crux Lighting Unit","Description":"A functional and decorative Crux Lighting Unit for a living area, bedroom, or home study. This Crux Lighting Unit would make an excellent accent piece in the corner of the room or by the sofa in any modern or vintage decor","price":"166","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3535/lacasa-kuzpMsI0I9GPFVGA-941_Loft-lampada-a-sospensione-atyle-creativo-corda-di-canapa-art-deco-di-illuminazione-bar-vintage-luce-ristorante-country-americano-lampadina-appesa-EG.jpg"}
-,{"id":22,"Categoryid":3,"name":"Athanasiadis Ceiling","Description":"This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"659","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1659/lacasa-SP7VvEtUa1LMaSJ1-13fkpj_zarwrbmmxiczxwm6.jpg"}
-,{"id":23,"Categoryid":3,"name":"Elnora Ceiling Lighting","Description":"This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"2963","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1605/lacasa-qbNU6ndBvwfHmMUV-yl0064uk3kh_91vrufpnjiycgo6n-2.jpg"}
-,{"id":124,"Categoryid":3,"name":"Josefina Ceiling Lighting","Description":"This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"719","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1603/lacasa-DVimuynlykKYrZuo-yl006627vb2bq_dxouiqvjzgpsfdxe-2.jpg"}
-,{"id":25,"Categoryid":3,"name":"Dixie Ceiling Lighting","Description":"This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"2640","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1602/lacasa-IvZUOF0JJw1XCzWu-yl006727p1cx5_iq1v6qlytufjc6w3_copy_.jpg"}
-,{"id":26,"Categoryid":3,"name":"Yvonne Ceiling Lighting","Description":"This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"1559","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1610/lacasa-6NwbdrzimFni1Tnr-yl0058kloxh_qor13prekruqbc9b.jpg"}
-,{"id":27,"Categoryid":3,"name":"Josefina Ceiling Lighting-Gold","Description":"This ceiling lamp light modern style fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"2159","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1609/lacasa-DRWfvN0kgNhEfi82-yl006227jrctc_kz9cw481xrjdrpef.jpg"}
-,{"id":28,"Categoryid":3,"name":"Kelli Ceiling Lighting-Black","Description":"This modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"2159","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1606/lacasa-t50Swr73wXOiPN5g-yl0063tuzse_53xmish2ikgbrj6a_copy_.jpg"}
-,{"id":29,"Categoryid":3,"name":"Cassie Ceiling Lighting","Description":"This triple pendant light modern style of ceiling lamp fits well in any interior. This lamp has it all and works great in both bedrooms, dining room, or living room.","price":"9960","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/1599/lacasa-6uZDXkgCrVhDnaYt-yl0068b1bmy_owqd1xhxp9rxlb4b.jpg"}
-,{"id":30,"Categoryid":3,"name":"Black Table Lamp ","Description":"Plastic table lamp with chapeau. All Black &nbsp;","price":"1000","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/4560/lacasa-bcv7bAsQgBjdCEMe-IMG_0107-scaled.jpg"}
-
-,{"id":31,"Categoryid":4,"name":"Paulo Mirror","Description":"An elegant mirror that will highlight any wall. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"1500","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/4898/lacasa-LModvjrL-ASH1102.jpeg"}
-,{"id":32,"Categoryid":4,"name":"Getto Mirror","Description":"An elegant mirror that will highlight any wall. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"1999","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/4897/lacasa-9l9XsPtE-ASH1106.jpeg"}
-,{"id":33,"Categoryid":4,"name":"Hand-Crafted Wooden","Description":"A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"1224","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/4411/lacasa-QQL1RcTjfmQYsxJ9-d4f538c9-5ec6-471a-b916-cec584cb9868.jpg"}
-,{"id":34,"Categoryid":4,"name":"LED Mirror Illuminated","Description":"A functional and decorative mirror for a bedroom. This mirror would make an excellent accent piece in the corner of the room in any modern or vintage decor.","price":"2170","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/3633/lacasa-Q3LDhJGXfByxtEnC-tfhg.jpg"}
-,{"id":35,"Categoryid":4,"name":"Macrame Large Mirror","Description":"A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"1176","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2884/lacasa-SRgAuPaZg0ERH312-art3.jpg"}
-,{"id":36,"Categoryid":4,"name":"PEC Three Mirror","Description":"An essential mirror for any modern living room A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"2520","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2090/lacasa-d5XLMyJrbKbCBPa2-IMEI0006.jpg"}
-,{"id":37,"Categoryid":4,"name":"ELG Mirror","Description":"a mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"1319","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2087/lacasa-1C2UzjhicqIqpx01-006_4.jpg"}
-,{"id":38,"Categoryid":4,"name":"SAL Mirror","Description":"A mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor","price":"1350","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2086/lacasa-UOn4xvgjwvPLOoNz-007_3.jpg"}
-,{"id":39,"Categoryid":4,"name":"AYR Mirror & Console","Description":"A mirror made with quality to be the highlight of any room. A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor.","price":"4080","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/2085/lacasa-anXGTlVArQN4xrZu-017_1.jpg"}
-,{"id":40,"Categoryid":4,"name":"Tura Mirror Gold","Description":"Made of Steel A functional and decorative mirror it would make an excellent accent piece in any modern or vintage decor","price":"1260","image":"https://lacasa.fra1.digitaloceanspaces.com/public/products/821/lacasa-xiueVlBDve0ajyOF-gfffj.jpeg"}
-
-
+  "cart": [
+    
   ]
-
-
 }

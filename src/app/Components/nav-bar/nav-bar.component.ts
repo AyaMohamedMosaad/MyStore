@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductServicesService } from 'src/app/Services/product-services.service';
+import { ProductServicesService } from 'src/app/Services/ProductServices/product-services.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,9 +8,8 @@ import { ProductServicesService } from 'src/app/Services/product-services.servic
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private myServices:ProductServicesService) { }
-AllCategories:any
-selectedCatID:any
+  constructor() { }
+
 
 CardProducts:any=[]
 

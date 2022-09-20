@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductServicesService } from 'src/app/Services/product-services.service';
+import { ProductServicesService } from 'src/app/Services/ProductServices/product-services.service';
 
 @Component({
   selector: 'app-products-list',
@@ -16,11 +16,12 @@ AllID:any
 
   ngOnInit(): void {
 
-
      this.getAllCategories()
       this.getAll()
 
   }
+
+
 
 
 getAllCategories()

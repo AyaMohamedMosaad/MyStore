@@ -99,16 +99,13 @@
   <div class="row">
     <div class="col-6 offset-3">
      <div class="d-grid">
-        <button *ngIf="CardProducts.length>0" routerLink="/Confirmation"  type="submit" class="btn btn-success m-2" [disabled]="registerForm.invalid"   (click)="SendCardToBackEng()">Order Now</button>
+        <button *ngIf="CardProducts.length>0" routerLink="/Confirmation"  type="submit" class="btn btn-success m-2" [disabled]="registerForm.invalid"   (click)="SendCardToBackEnd()">Order Now</button>
      </div>
     </div>
 </div>
 
 </form>
 
-<div class="alert alert-danger" *ngIf="notSuccess">
-  <strong>Danger!</strong> Your Card Is Empty
-</div>
 
 </div>
 
