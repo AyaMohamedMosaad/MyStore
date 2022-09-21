@@ -12,7 +12,7 @@ import { ProductServicesService } from 'src/app/Services/ProductServices/product
 })
 export class AddToCardComponent implements OnInit {
 
-  constructor(private ProductServices:ProductServicesService ,private CardServices:AddToCardServicesService) { }
+  constructor(private http:AddToCardServicesService) { }
   AllItems:any
   count:any
 
@@ -48,11 +48,9 @@ get CreditCardNumber():FormControl
 CardProducts:any
 getAllCardProducts()
 {
-  if("card" in localStorage)
-  {
-    this.CardProducts=JSON.parse(localStorage.getItem("card")!)
-  }
-this.CalcTotalPrice()
+
+ this.CardProducts =this.http.getAllCardProducts()
+  this.CalcTotalPrice()
 
 
 }
@@ -109,39 +107,22 @@ dec(index:any)
 //Delete and Clear
 deleteProduct(index:any)
 {
-
-  // console.log(this.CardProducts[index])
-  this.CardProducts.splice(index,1)
-  this.CalcTotalPrice()
-
-  localStorage.setItem("card",JSON.stringify(this.CardProducts))
+ this.http.deleteProductFromCart(index)
+ this.getAllCardProducts()
+ this.CalcTotalPrice()
 }
 
 clearShoppingCart()
 {
-   this.CardProducts.splice(0)
-   localStorage.setItem("card",JSON.stringify(this.CardProducts))
+  this.http.clearShoppingCart()
+  this.getAllCardProducts()
   this.CalcTotalPrice()
 
 }
 
 
 
-SendCardToBackEnd()
-{
-  let products=this.CardProducts.map((item: { item: { id: any; }; quantity: any; })=>{
-   return {productId:item.item.id ,productQuantity:item.quantity}
-  })
 
-  let Model=
-    {
-    UserId:"1234",
-    Date:new Date(),
-    Products:products
-    }
-this.CardServices.CreateNewCart(Model)
-
-}
 
 
 

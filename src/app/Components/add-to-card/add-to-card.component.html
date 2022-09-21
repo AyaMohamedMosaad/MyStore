@@ -25,7 +25,7 @@
         <td>
           <div class="" style="display: flex; justify-content: center;">
             <button class="btn btn-success inc" (click)="inc(index)">+</button>
-            <input class="form-control w-25" type="number" [(ngModel)]="pro.quantity" minlength="1" (change)="DetectChange()">
+            <input class="form-control w-25" type="number" [(ngModel)]="pro.quantity" minlength="1" (ngModelChange)="DetectChange()">
             <button class="btn btn-danger dec" (click)="dec(index)">-</button>
           </div>
         </td>
@@ -99,7 +99,7 @@
   <div class="row">
     <div class="col-6 offset-3">
      <div class="d-grid">
-        <button *ngIf="CardProducts.length>0" routerLink="/Confirmation"  type="submit" class="btn btn-success m-2" [disabled]="registerForm.invalid"   (click)="SendCardToBackEnd()">Order Now</button>
+        <button *ngIf="CardProducts.length>0" routerLink="/Confirmation"  type="submit" class="btn btn-success m-2" [disabled]="registerForm.invalid">Order Now</button>
      </div>
     </div>
 </div>
