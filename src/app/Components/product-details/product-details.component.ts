@@ -46,11 +46,14 @@ event:any
 
              this.ProductCard.push(this.event)
              localStorage.setItem("card",JSON.stringify(this.ProductCard))
+             alert("this Product Successfuly Added To Your Cart")
+
            }
       }
       else{
         this.ProductCard.push(this.event)
         localStorage.setItem("card",JSON.stringify(this.ProductCard))
+        alert("this Product Successfuly Added To Your Cart")
       }
       console.log(this.event)
   }

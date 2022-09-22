@@ -96,11 +96,14 @@ CardProducts:any=[]
 
              this.CardProducts.push(event)
              localStorage.setItem("card",JSON.stringify(this.CardProducts))
+             alert("this Product Successfuly Added To Your Cart")
            }
       }
       else{
         this.CardProducts.push(event)
         localStorage.setItem("card",JSON.stringify(this.CardProducts))
+        alert("this Product Successfuly Added To Your Cart")
+
       }
       console.log(event)
   }
