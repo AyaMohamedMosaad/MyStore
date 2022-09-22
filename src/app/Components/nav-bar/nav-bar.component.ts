@@ -12,7 +12,7 @@ export class NavBarComponent implements OnInit {
 
 
 CardProducts:any=[]
-
+length:any
   ngOnInit(): void {
     this.getDataFromLocalDtorage()
   }
@@ -23,7 +23,8 @@ CardProducts:any=[]
     {
       this.CardProducts=JSON.parse(localStorage.getItem("card")!)
     }
-
+     this.length = this.CardProducts.length
+     return  this.length
   }
 
 

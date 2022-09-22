@@ -20,7 +20,7 @@ export class CardComponent implements OnInit {
 
 add()
 {
-  if(this.amount==0){
+  if(this.amount<1){
     this.amount=1
     this.item.emit({item:this.data,quantity:this.amount})
   }

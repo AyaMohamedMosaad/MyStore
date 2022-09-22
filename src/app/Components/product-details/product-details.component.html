@@ -7,7 +7,7 @@
 
     <div class="product">
     <div class="product-img">
-        <img src="{{product.image}}" alt="">
+        <img src={{product.image}}>
         <span class="tag">new</span>
     </div>
     <div class="product-listing">
@@ -32,7 +32,7 @@
           </div>
 
           <div *ngIf="!addButton"  class="mt-2" style="display:flex">
-              <input type="number" class="form-control"  [(ngModel)]="amount">
+              <input type="number" class="form-control"  [(ngModel)]="amount" min="1" style="font-size:30px; text-align: center;">
               <button (click)="add();addButton=true" style="border-radius:2px;"><img src="/assets/images/icons8-shopping-cart.gif" style="width: 40px;"></button>
        </div>
 

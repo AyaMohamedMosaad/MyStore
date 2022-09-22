@@ -107,17 +107,31 @@ dec(index:any)
 //Delete and Clear
 deleteProduct(index:any)
 {
- this.http.deleteProductFromCart(index)
- this.getAllCardProducts()
- this.CalcTotalPrice()
+
+ var result = confirm("Are you Want to delete this Product ?");
+if (result) {
+ // alert('The product Deleted Successfuly');
+  this.http.deleteProductFromCart(index)
+  this.getAllCardProducts()
+  this.CalcTotalPrice()
+}
+ else {
+  alert('the Process Cancelled');
+}
+
 }
 
 clearShoppingCart()
 {
+  var result = confirm("Are you Want to Delete All the Products From Your Cart ?");
+if (result) {
   this.http.clearShoppingCart()
   this.getAllCardProducts()
   this.CalcTotalPrice()
-
+}
+else {
+  alert('the Process Cancelled');
+}
 }
 
 

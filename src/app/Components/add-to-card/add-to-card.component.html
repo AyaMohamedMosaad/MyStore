@@ -25,7 +25,7 @@
         <td>
           <div class="" style="display: flex; justify-content: center;">
             <button class="btn btn-success inc" (click)="inc(index)">+</button>
-            <input class="form-control w-25" type="number" [(ngModel)]="pro.quantity" minlength="1" (ngModelChange)="DetectChange()">
+            <input class="form-control w-25" type="number" [(ngModel)]="pro.quantity" min="1" (ngModelChange)="DetectChange()" >
             <button class="btn btn-danger dec" (click)="dec(index)">-</button>
           </div>
         </td>

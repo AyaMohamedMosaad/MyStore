@@ -7,7 +7,7 @@
       </div>
       <div class="top-div">
           <div class="border">
-          <img src="{{data.image}}" routerLink="/details/{{data.id}}">
+          <img src={{data.image}} routerLink="/details/{{data.id}}">
           </div>
           <span>{{data.price}} L.E</span>
       </div>
@@ -22,7 +22,7 @@
           </div>
 
           <div *ngIf="!addButton"  style="display:flex">
-              <input type="number" class="form-control"  [(ngModel)]="amount">
+              <input type="number" class="form-control"  [(ngModel)]="amount" min="1" style="font-size:20px; text-align: center;">
               <button (click)="add();addButton=true" style="border-radius:2px;"><img src="/assets/images/icons8-shopping-cart.gif" style="width: 20px;"></button>
        </div>
 

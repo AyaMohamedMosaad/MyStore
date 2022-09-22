@@ -13,7 +13,7 @@ export class ProductDetailsComponent implements OnInit {
   ProductId:any
   product:any
 addButton:boolean=true
-amount:any
+amount:any=1
   constructor(private activated:ActivatedRoute,private productservices:ProductServicesService) {
     this.ProductId=activated.snapshot.params["id"];
   }
